@@ -15,7 +15,7 @@ $PluginInfo["MathJax"] = array(
 
 class MathJax extends Gdn_Plugin {
 	public function Base_Render_Before(&$Sender) {
-		$Sender->AddJsFile("https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML");
+		$Sender->AddJsFile("https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML");
 		$Sender->AddJsFile("redraw.js", "plugins/MathJax");
 	}
 }
